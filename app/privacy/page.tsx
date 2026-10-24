@@ -38,6 +38,11 @@ export default function PrivacyPage() {
           when the claim phase opens. We do not sell, rent, or share personal data
           with third parties for marketing.
         </p>
+        <p>
+          <b>Claim phase:</b> if minting at claim time involves payment, the data
+          needed for that (e.g. an order record) will be handled securely and this
+          policy will be updated before the claim phase opens.
+        </p>
 
         <h2>Retention &amp; control</h2>
         <p>

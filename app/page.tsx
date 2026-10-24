@@ -341,8 +341,8 @@ export default function Home() {
             {qty > left && <p className="err">Only {left} NFTs left — lower quantity.</p>}
             {formErr && <p className="err">{formErr}</p>}
             <p className="hint">
-              🔒 Read-only: we only need your public address to send the NFT. We never
-              ask for seed phrases, private keys, or signatures. Double-check — wallet
+              🔒 We only need your public address to send the NFT — never a seed
+              phrase or private key. Reservation is free. Double-check — wallet
               can't change after reserving.
             </p>
           </section>

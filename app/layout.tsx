@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Oblyx NFT — official reservation site`,
     description:
-      "Free allowlist reservation for the 1,000-supply Oblyx NFT collection. No payment, no signatures, no seed phrases — ever.",
+      "Reserve your spot in the 1,000-supply Oblyx NFT allowlist. Reservation is free; claim-phase details (pricing, payments) announced on @OBLYX_NFT.",
     type: "website",
     ...(siteUrl ? { url: siteUrl } : {}),
     siteName: "Oblyx",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Oblyx NFT — official reservation site",
     description:
-      "Free allowlist reservation for the 1,000-supply Oblyx NFT collection. No payment, no signatures, no seed phrases — ever.",
+      "Reserve your spot in the 1,000-supply Oblyx NFT allowlist. Reservation is free; claim-phase details (pricing, payments) announced on @OBLYX_NFT.",
     images: ["/icon.jpg"],
   },
 };

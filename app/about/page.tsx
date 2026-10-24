@@ -24,8 +24,10 @@ export default function AboutPage() {
           reviewed. The NFT claim phase opens after all slots are taken.
         </p>
         <p>
-          The reservation is completely free. There is no payment step anywhere on
-          this site.
+          Reserving your spot is completely free — no payment, no wallet
+          connection, and no signatures during the reservation phase. Claim-phase
+          details (pricing and payment) will be announced clearly on the official
+          X account before it opens.
         </p>
 
         <h2>Safety — please read</h2>
