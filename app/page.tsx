@@ -340,7 +340,11 @@ export default function Home() {
             </div>
             {qty > left && <p className="err">Only {left} NFTs left — lower quantity.</p>}
             {formErr && <p className="err">{formErr}</p>}
-            <p className="hint">Double-check — wallet can't change after reserving.</p>
+            <p className="hint">
+              🔒 Read-only: we only need your public address to send the NFT. We never
+              ask for seed phrases, private keys, or signatures. Double-check — wallet
+              can't change after reserving.
+            </p>
           </section>
         )}
 
@@ -357,7 +361,16 @@ export default function Home() {
           </section>
         )}
 
-        <footer>&copy; 2026 {SITE.projectName} • 1 wallet = 1 reservation</footer>
+        <footer>
+          &copy; 2026 {SITE.projectName} • 1 wallet = 1 reservation
+          <span className="mono" style={{ display: "block", marginTop: 6, opacity: 0.7 }}>
+            <a href="/about" style={{ color: "inherit" }}>About</a>
+            {" • "}
+            <a href="/privacy" style={{ color: "inherit" }}>Privacy</a>
+            {" • "}
+            <a href="/terms" style={{ color: "inherit" }}>Terms</a>
+          </span>
+        </footer>
       </div>
 
       {step !== 4 && (

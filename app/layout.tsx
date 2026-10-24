@@ -1,12 +1,37 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { SITE } from "../lib/config";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
 export const metadata: Metadata = {
+  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
   title: "Oblyx NFT",
   description:
     "Join the 1,000-supply allowlist. Enter your X handle, finish X tasks, reserve up to 4 NFTs.",
+  keywords: [
+    "Oblyx", "Oblyx NFT", "NFT allowlist", "free NFT reservation",
+    "Oblyx official", "Oblyx claim",
+  ],
+  category: "technology",
   icons: {
     icon: "/icon.jpg",
+  },
+  openGraph: {
+    title: `Oblyx NFT — official reservation site`,
+    description:
+      "Free allowlist reservation for the 1,000-supply Oblyx NFT collection. No payment, no signatures, no seed phrases — ever.",
+    type: "website",
+    ...(siteUrl ? { url: siteUrl } : {}),
+    siteName: "Oblyx",
+    images: [{ url: "/icon.jpg" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Oblyx NFT — official reservation site",
+    description:
+      "Free allowlist reservation for the 1,000-supply Oblyx NFT collection. No payment, no signatures, no seed phrases — ever.",
+    images: ["/icon.jpg"],
   },
 };
 

@@ -10,7 +10,18 @@ export const SITE = {
   xAccount: "OBLYX_NFT",
   xAccountUrl: "https://x.com/intent/follow?screen_name=OBLYX_NFT",
   xPostUrl: "https://x.com/OBLYX_NFT",
+  // Canonical site origin. Set NEXT_PUBLIC_SITE_URL in the deployment env
+  // (e.g. "https://oblyx.art") so og:meta URLs and search results use it.
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "",
 } as const;
+
+export const CONTACT = {
+  // Put your real contact email here when available; X DMs are the
+  // primary channel until then.
+  email: "",
+  xHandle: "OBLYX_NFT",
+  xUrl: "https://x.com/OBLYX_NFT",
+};
 
 export type ReservationStatus = "pending" | "accepted" | "rejected";
 
