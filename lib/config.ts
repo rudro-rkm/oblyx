@@ -9,7 +9,7 @@ export const SITE = {
   maxPerWallet: 4,
   xAccount: "OBLYX_NFT",
   xAccountUrl: "https://x.com/intent/follow?screen_name=OBLYX_NFT",
-  xPostUrl: "https://x.com/OBLYX_NFT",
+  xPostUrl: "https://x.com/OBLYX_NFT/status/2114598321344131548",
   // Direct X intent links for the promo post (one tap, right action).
   xLikeUrl: "https://x.com/intent/like?tweet_id=2114598321344131548",
   xRepostUrl: "https://x.com/intent/retweet?tweet_id=2114598321344131548",
