@@ -310,13 +310,13 @@ export default function Home() {
             <p className="sub">Tap each, do it on X, come back — auto-confirmed in order.</p>
             <Task k="follow" url={SITE.xAccountUrl} icon="1" title={`Follow @${SITE.xAccount}`} desc="Opens the official account." label={`𝕏 Follow @${SITE.xAccount}`} />
             {done.follow && (
-              <Task k="like" url={SITE.xPostUrl} icon="2" title="Like the post" desc="Tap the heart on X." label="𝕏 Like the post" />
+              <Task k="like" url={SITE.xLikeUrl} icon="2" title="Like the post" desc="Opens the post with the heart ready." label="𝕏 Like the post" />
             )}
             {done.like && (
-              <Task k="rt" url={SITE.xPostUrl} icon="3" title="Repost it" desc="Repost (not quote)." label="𝕏 Repost it" />
+              <Task k="rt" url={SITE.xRepostUrl} icon="3" title="Repost it" desc="Opens the repost dialog." label="𝕏 Repost it" />
             )}
             {done.rt && (
-              <Task k="cmt" url={SITE.xPostUrl} icon="4" title="Comment on the post" desc="Then return here." label="𝕏 Comment now" />
+              <Task k="cmt" url={SITE.xReplyUrl} icon="4" title="Comment on the post" desc="Opens the reply box. Then return here." label="𝕏 Comment now" />
             )}
           </section>
         )}

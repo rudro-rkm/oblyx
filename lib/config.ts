@@ -10,6 +10,10 @@ export const SITE = {
   xAccount: "OBLYX_NFT",
   xAccountUrl: "https://x.com/intent/follow?screen_name=OBLYX_NFT",
   xPostUrl: "https://x.com/OBLYX_NFT",
+  // Direct X intent links for the promo post (one tap, right action).
+  xLikeUrl: "https://x.com/intent/like?tweet_id=2114598321344131548",
+  xRepostUrl: "https://x.com/intent/retweet?tweet_id=2114598321344131548",
+  xReplyUrl: "https://x.com/intent/post?in_reply_to=2114598321344131548",
   // Canonical site origin. Set NEXT_PUBLIC_SITE_URL in the deployment env
   // (e.g. "https://oblyx.art") so og:meta URLs and search results use it.
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "",
